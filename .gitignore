@@ -1,0 +1,7 @@
+*.class
+**/target/**
+**/.idea/**
+*.inf
+*.db
+*.out
+logs/**
