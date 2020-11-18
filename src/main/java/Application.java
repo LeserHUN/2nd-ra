@@ -17,7 +17,12 @@ public class Application {
         lista.add(66);
         System.out.println(lista.get(1)); System.out.println(lista.get(5));
 
+        List<String> felsorolas = new ArrayList<>(2);
 
+        felsorolas.add("Repa") ;
+        felsorolas.add("Retek") ;
+        felsorolas.add("Mogyoro") ;
+        System.out.println(felsorolas.get(0)); System.out.println(felsorolas.get(1)); System.out.println(felsorolas.get(2));
 
         int[][] ketDTomb = new int [3][3];
         ketDTomb[0][0] = 1;
