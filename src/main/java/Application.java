@@ -7,36 +7,32 @@ public class Application {
         tomb[1] = 2;
         tomb[2] = 3;
         System.out.println(tomb[2]);
-        List<Integer> lista = new ArrayList<>(2);
+        List<Integer> lista = new ArrayList<>();
 
-        lista.add(3);
-        lista.add(4);
-        lista.add(77);
+        lista.add(11);
+        lista.add(22);
+        lista.add(33);
         lista.add(44);
         lista.add(55);
         lista.add(66);
-        System.out.println(lista.get(1)); System.out.println(lista.get(5));
+        System.out.println(lista);
 
-        List<String> felsorolas = new ArrayList<>(2);
+        List<String> felsorolas = new ArrayList<>();
 
         felsorolas.add("Repa") ;
         felsorolas.add("Retek") ;
         felsorolas.add("Mogyoro") ;
-        System.out.println(felsorolas.get(0)); System.out.println(felsorolas.get(1)); System.out.println(felsorolas.get(2));
+        System.out.println(felsorolas);
 
-        int[][] ketDTomb = new int [3][3];
+        Integer[][] ketDTomb = new Integer[3][3] ;
         ketDTomb[0][0] = 1;
         ketDTomb[0][1] = 2;
-        ketDTomb[1][0] = 3;
-        ketDTomb[1][1] = 4;
-        ketDTomb[2][1] = 5;
-        ketDTomb[2][2] = 6;
-        ketDTomb[1][2] = 7;
-        System.out.println(Arrays.toString(ketDTomb[1]));
+        ketDTomb[0][2] = 3;
 
-        Map<String, Integer> map = new HashMap<>();
-        map.put("kulcs1", 12);
-        map.put("kulcs2", 24);
-        System.out.println(map.get("kulcs1"));
+        System.out.println(Arrays.toString(ketDTomb[0]));
+
+        Map<Integer, String> map = new HashMap<>();
+        map.put(12, "Szép vok, te nem!");
+        System.out.println(map.get(12));
     }
 }
