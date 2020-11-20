@@ -29,6 +29,11 @@ public class LoopPracc {
         System.out.println("Kor:");
         Integer kor = scanner.nextInt();
 
+        switch (kor) {
+            case (kor < 20):
+                System.out.println("Hi" + nev);
+        }
+
     }
 
 }
