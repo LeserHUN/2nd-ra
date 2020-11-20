@@ -6,7 +6,16 @@ public class LoopPracc {
         System.out.println("3.Feldatad:");
         Scanner scanner = new Scanner(System.in);
 
-        String nev =
+        System.out.println("Név:");
+        String nev = scanner.nextLine();
+        if ()
+
+        System.out.println("Nem:");
+        String nem = scanner.nextLine();
+
+        System.out.println("Kor:");
+        Integer kor = scanner.nextInt();
+
     }
 
 }
