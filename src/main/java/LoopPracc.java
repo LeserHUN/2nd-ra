@@ -11,20 +11,20 @@ public class LoopPracc {
 
         System.out.println("Nem: (Férfi/Nő)");
         String nem = scanner.nextLine();
-        switch (
-        case ("Férfi") {
-            System.out.println("f");
-        }
+        switch {
+            case "Férfi":
+                System.out.println("f");
 
-        case ("Nő")
-        ;
-        {
-            System.out.println("n");
 
+            case "Nő":
+
+
+                System.out.println("n");
+
+
+            default:
+                System.out.println("Ön esetleg egyéb nemű?");
         }
-        default:
-        System.out.println("Ön esetleg egyéb nemű?");
-        )
 
 
         System.out.println("Kor:");
