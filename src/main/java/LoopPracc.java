@@ -14,7 +14,7 @@ public class LoopPracc {
         if ("Férfi".equals(nem)) {
             System.out.println("Férfi");
         } else if ("Nő".equals(nem));{
-            System.out.println("Nő")";
+            System.out.println("Nő");
         }
 
 
