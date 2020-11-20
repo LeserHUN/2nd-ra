@@ -12,9 +12,16 @@ public class HW1 {
         String szoveg = mondat;
         String[] darabok = szoveg.split(" ");
 
+        String lw = "";
         for (int i = 0 ; i < darabok.length; i++ ){
             // System.out.println(darabok[i]);
+            int mennyiseg = darabok[i].length();
+            int lfw = lw.length();
+            if (mennyiseg >= lfw) {
+                lw = darabok[i];
+            }
         }
+        System.out.println(lw);
 
     }
 }
