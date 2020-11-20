@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LoopPracc {
+public class HW3 {
 
     public static void main(String[] args) {
         System.out.println("3.Feldatad:");
@@ -14,11 +14,11 @@ public class LoopPracc {
         String nem = scanner.nextLine();
         switch (nem) {
             case "Férfi":
-                System.out.println("f");
+                System.out.println("");
                 break;
 
             case "Nő":
-                System.out.println("n");
+                System.out.println("");
                 break;
 
             default:
@@ -29,11 +29,21 @@ public class LoopPracc {
         System.out.println("Kor:");
         Integer kor = scanner.nextInt() ;
 
-        switch (kor) {
-            case kor < 20:
-                System.out.println("Hi" + nev);
+        if (kor<20){
+            if (nem.equals("Nő")){
+                System.out.println("Hi, Miss " + nev);
+            }
+            if (nem.equals("Férfi")){
+                System.out.println("Hello, "+ nev);
+            }
         }
-
+        if (kor>=20){
+            if (nem.equals("Nő")){
+                System.out.println("Good morning, Mrs "+ nev);
+            }
+            if (nem.equals("Férfi")){
+                System.out.println("Good morning, Mr "+ nev);
+            }
+        }
     }
-
 }
