@@ -8,10 +8,10 @@ public class LoopPracc {
 
         System.out.println("Név:");
         String nev = scanner.nextLine();
-        if ()
 
         System.out.println("Nem:");
         String nem = scanner.nextLine();
+        if()
 
         System.out.println("Kor:");
         Integer kor = scanner.nextInt();
