@@ -12,6 +12,7 @@ public class MainMenu implements Menu {
 
     private final RegistrationMenu registrationMenu;
     private final ConsoleReader consoleReader;
+    private final LoginMenu loginMenu;
 
     @Override
     public void enterMenu() {
@@ -34,7 +35,7 @@ public class MainMenu implements Menu {
                     registrationMenu.enterMenu();
                     break;
                 case MAIN_MENU_LOGIN_USER_OPTION:
-
+                    loginMenu.enterMenu();
                     break;
                 case EXIT_OPTION:
                     break;

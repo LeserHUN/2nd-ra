@@ -8,13 +8,14 @@ import java.util.function.Predicate;
 
 @Component
 @RequiredArgsConstructor
-public class ValidationReader {
-    private final ConsoleReader consoleReader;
+public class IntegerValidationReader {
+    private final IntegerReader integerReader;
 
-    public String rearInput(Predicate<String> validation) {
-        String input;
+
+    public int readNumber(Predicate<Integer> validation) {
+        int input;
         do {
-            input = consoleReader.readInput();
+            input = integerReader.readNumber();
         } while (!validation.test(input));
         return input;
     }
