@@ -5,6 +5,7 @@ import com.github.leser.read.ConsoleReader;
 import com.github.leser.repository.user.User;
 import com.github.leser.repository.user.UserRepository;
 import com.github.leser.sercive.DepositService;
+import com.github.leser.sercive.TransferService;
 import com.github.leser.sercive.WithdrawService;
 import com.github.leser.util.Session;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,7 @@ private final Session session;
 private final UserRepository userRepository;
 private final DepositService depositService;
 private final WithdrawService withdrawService;
+private final TransferService transferService;
     @Override
     public void enterMenu() {
         String input;
@@ -34,6 +36,7 @@ private final WithdrawService withdrawService;
             System.out.println("balance - Check actual balance");
             System.out.println("deposit - Deposit");
             System.out.println("withdraw - Withdraw");
+            System.out.println("transfer - Transfer");
             System.out.println("logout - Logout");
             System.out.println("Choose one command from above");
 
@@ -50,6 +53,9 @@ private final WithdrawService withdrawService;
                     break;
                 case ACCOUNT_MENU_WITHDRAW_OPTION:
                     withdrawService.withdraw(user);
+                    break;
+                case ACCOUNT_MENU_TRANSFER_OPTION:
+                    transferService.transfer(user);
                     break;
                 case ACCOUNT_MENU_LOGOUT_OPTION:
                     break;

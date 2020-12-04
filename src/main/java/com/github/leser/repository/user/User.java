@@ -1,23 +1,21 @@
 package com.github.leser.repository.user;
 
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 @Data
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
+@NoArgsConstructor
 public class User {
     private String username;
     private String password;
     private int balance;
 
-    public void increaseBalance(int depositValue) {
-        balance += depositValue;
+    public void increaseBalance(int value) {
+        balance += value;
     }
-    public void decreaseBalance(int withdrawValue){
-        balance -= withdrawValue;
+    public void decreaseBalance(int value){
+        balance -= value;
     }
 }

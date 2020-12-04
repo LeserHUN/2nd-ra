@@ -23,5 +23,3 @@ public class Application implements CommandLineRunner {
         log.info("Exiting...");
     }
 }
-
-

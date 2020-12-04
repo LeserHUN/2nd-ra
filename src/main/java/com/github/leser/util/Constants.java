@@ -8,6 +8,7 @@ public class Constants {
     public static final String ACCOUNT_MENU_BALANCE_OPTION = "balance";
     public static final String ACCOUNT_MENU_DEPOSIT_OPTION = "deposit";
     public static final String ACCOUNT_MENU_WITHDRAW_OPTION = "withdraw";
+    public static final String ACCOUNT_MENU_TRANSFER_OPTION = "transfer";
 
 
 }
