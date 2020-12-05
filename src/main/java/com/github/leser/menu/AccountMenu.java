@@ -28,8 +28,8 @@ private final TransferService transferService;
     public void enterMenu() {
         String input;
         String username = session.getUsername();
-        User user = userRepository.findByUsername(username);
         do {
+            User user = userRepository.findByUsername(username);
             System.out.println();
             System.out.println("Account menu, Hello " + username);
             System.out.println("Commands");

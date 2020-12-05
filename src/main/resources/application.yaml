@@ -1,9 +1,14 @@
 registration:
   startBalance: 100
   defaultUsers:
-    - username: user1
-      password: asdasd
+    - username: 1
+      password: asd
       balance: 100
-    - username: user2
-      password: asdasd
+    - username: 2
+      password: asd
       balance: 100
+database:
+  driver: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/bank
+  username: postgres
+  password: postgres
