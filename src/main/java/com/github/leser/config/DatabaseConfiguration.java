@@ -1,31 +1,13 @@
 package com.github.leser.config;
 
-import com.github.leser.repository.DatabaseConnection;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
+import com.github.leser.Application;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+@EnableJpaRepositories(basePackages = "com.github.leser")
+@EntityScan(basePackageClasses = Application.class)
 @Configuration
 public class DatabaseConfiguration {
-    @Value("${database.driver}")
-    private String driver;
 
-    @Value("${database.url}")
-    private String url;
-
-    @Value("${database.username}")
-    private String username;
-
-    @Value("${database.password}")
-    private String password;
-
-    @Bean
-    public DatabaseConnection databaseConnection(){
-        return DatabaseConnection.builder()
-                .driver(driver)
-                .databaseUrl(url)
-                .databaseUsername(username)
-                .databasePassword(password)
-                .build();
-    }
 }

@@ -1,3 +1,10 @@
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/bank
+    driverClassName: org.postgresql.Driver
+
 registration:
   startBalance: 100
   defaultUsers:
@@ -7,8 +14,3 @@ registration:
     - username: 2
       password: asd
       balance: 100
-database:
-  driver: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5432/bank
-  username: postgres
-  password: postgres
