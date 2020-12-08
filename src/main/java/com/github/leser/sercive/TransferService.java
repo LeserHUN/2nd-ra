@@ -19,9 +19,9 @@ import static org.apache.logging.log4j.util.Strings.isBlank;
 public class TransferService {
     private final IntegerValidationReader integerValidationReader;
     private final PositiveNumberValidation positiveNumberValidation;
-private final ValidationReader validationReader;
-private final UserExistValidation userExistValidation;
-private final UserRepository userRepository;
+    private final ValidationReader validationReader;
+    private final UserExistValidation userExistValidation;
+    private final UserRepository userRepository;
 
     public void transfer(User user) {
         System.out.println("How much do you want to transfer? Available balance is: " + user.getBalance());
