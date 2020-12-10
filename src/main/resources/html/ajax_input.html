@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajax index page</title>
+    </head>
+    <body>
+        <div>Hello, <span id="input"></span></div>
+        <script>
+                    const request = new XMLHttpRequest();
+                        request.open("GET", "/api/input", 0);
+                        request.send();
+
+                    document.getElementById("input").innerHTML = JSON.parse(request.responseText).username;
+        </script>
+    </body>
+
+</html>

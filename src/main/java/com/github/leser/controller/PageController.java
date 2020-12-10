@@ -16,6 +16,12 @@ public class PageController {
     public String index(){
         return "index";
     }
+    @GetMapping("/ajax_input")
+    public String ajaxInput(){
+        return "ajax_input";
+    }
+
+
     @PostMapping("/input")
     public ModelAndView input(UsernameRequest request){
         log.info("/input - request: {}", request);
